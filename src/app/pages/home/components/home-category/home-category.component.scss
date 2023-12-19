@@ -1,0 +1,27 @@
+.category {
+  display: flex;
+  gap: 30px;
+  margin-left: 165px;
+  margin-top: 32px;
+  margin-bottom: 40px;
+  &__item {
+    text-align: center;
+    width: 160px;
+    height: 80px;
+    flex-shrink: 0;
+  }
+
+  &__img {
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    color: #545563;
+    font-family: Nunito;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+  }
+}

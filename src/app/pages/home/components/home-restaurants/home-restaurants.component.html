@@ -1,0 +1,22 @@
+<div class="resturant">
+  <div class="restaurants__title">Nearby restaurants</div>
+  <div class="restaurants__list">
+    <div
+      class="restaurants-item"
+      *ngFor="let item of restaurants"
+    >
+      <div class="restaurant-item__img">
+        <img [src]="item.img" [alt]="item.title" />
+      </div>
+      <div class="restaurant-item__title">{{item.title}}</div>
+      <div class="restaurant-item__title">{{item.time}}</div>
+      <div class="restaurant-item__price">{{item.price}}</div>
+      <div class="restaurant-item__tags">
+        <div class="restaurant-item__tag" *ngFor="let tag of item.tags">
+            <img src="assets/sushi.png" alt="sushi">sushi
+        </div>
+      </div>
+      <div class="restaurant-item__cart">{{item.cart}}</div>
+    </div>
+  </div>
+</div>
